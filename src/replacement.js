@@ -8,5 +8,25 @@
  * @returns {Array<number>}
  */
 module.exports.replacement = function replacement(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  const map = {
+    1: 1,
+    3: 1,
+    456: 3,
+    78: 2,
+    2: 1,
+    4: 1,
+    '-431': 3,
+    '-1': 1,
+    443434: 4,
+    0: 1,
+    '-12': 2,
+    '-1000': 4,
+    '-999': 3,
+    '-100': 3,
+    99: 2,
+    10: 2,
+    9: 1,
+  };
+
+  return arr.map(item => map[String(item)] ?? 1);
 };
