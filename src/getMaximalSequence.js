@@ -6,7 +6,7 @@
 module.exports.getMaximalSequence = function getMaximalSequence(arr) {
   let maxElement = arr[0];
   let maxLength = 1;
-
+  
   let currentElement = arr[0];
   let currentLength = 1;
 
